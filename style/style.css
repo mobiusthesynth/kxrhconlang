@@ -1,13 +1,11 @@
 @font-face {
     font-display: swap;
     font-family: "KXRh";
-    font-style: normal;
-    font-weight: normal;
     src: url("./kxrh.ttf") format("truetype");
 }
 
 .kxrh {
-    font-family: "KXRh", sans-serif;
+    font-family: "KXRh";
     font-size: 32px;
     margin-top: 8px;
 }
@@ -16,6 +14,7 @@ body {
     background-color: #383838;
     color: #d8d8d8;
     margin-top: 0;
+    min-width: 1366px;
     padding-top: 85px;
 }
 
@@ -28,6 +27,7 @@ header {
     justify-content: center;
     left: 0;
     margin: 0;
+    min-width: 1366px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -50,6 +50,7 @@ nav {
     display: flex;
     height: 35px;
     left: 0;
+    min-width: 1366px;
     position: fixed;
     top: 50px;
     width: 100%;
