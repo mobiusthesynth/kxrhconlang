@@ -1,19 +1,20 @@
-@font-face {
+@font-face
+{
     font-display: swap;
     font-family: "KXRh";
     src: url("./kxrh.ttf") format("truetype");
 }
 
-@media (max-width: 1919px) {
-    body,
-    header,
-    html,
-    nav {
+@media (max-width: 1919px)
+{
+    body, header, html, nav
+    {
         min-width: 1920px;
     }
 }
 
-body {
+body 
+{
     background-color: #383838;
     color: #d8d8d8;
     font-family: Corbel;
@@ -22,7 +23,8 @@ body {
     text-align: center;
 }
 
-header {
+header 
+{
     align-items: center;
     background-color: #181818;
     color: #c45a5a;
@@ -37,24 +39,29 @@ header {
     width: 100%;
 }
 
-header p {
+header p 
+{
     font-size: 32px;
     margin: 0;
 }
 
-header .kxrh {
+header .kxrh 
+{
     padding-top: 12px;
 }
 
-h1 {
+h1 
+{
     font-size: 60px;
 }
 
-h2 {
+h2 
+{
     font-size: 40px;
 }
 
-nav {
+nav 
+{
     align-items: center;
     background-color: #181818;
     color: #c45a5a;
@@ -66,7 +73,8 @@ nav {
     width: 100%;
 }
 
-nav a {
+nav a 
+{
     align-items: center;
     color: inherit;
     display: flex;
@@ -77,11 +85,30 @@ nav a {
     user-select: none;
 }
 
-p {
+p 
+{
     font-size: 18px;
 }
 
-.consonant-grid {
+td 
+{
+    background-color: #383838;
+}
+
+td, th 
+{
+    border: 1px solid #000000;
+    text-align: center;
+}
+
+th 
+{
+    background-color: #181818;
+    color: #c45a5a;
+}
+
+.consonant-grid 
+{
     border-collapse: collapse;
     margin-left: auto;
     margin-right: auto;
@@ -89,20 +116,9 @@ p {
     width: 60%;
 }
 
-.consonant-grid td,
-.consonant-grid th {
-    border: 1px solid #000000;
-    text-align: center;
+.consonant-grid td, .consonant-grid th 
+{
     width: 20%;
-}
-
-.consonant-grid td {
-    background-color: #383838;
-}
-
-.consonant-grid th {
-    background-color: #181818;
-    color: #c45a5a;
 }
 
 .ipa
@@ -110,31 +126,37 @@ p {
     font-family: 'Times New Roman';
 }
 
-.kxrh {
+.kxrh 
+{
     font-family: "KXRh";
     font-size: 44px;
+    white-space: pre;
 }
 
-.vowel-grid {
+.punctuation-grid 
+{
     border-collapse: collapse;
     margin-left: auto;
     margin-right: auto;
     table-layout: fixed;
-    width: 30%;
+    width: 36%;
 }
 
-.vowel-grid td,
-.vowel-grid th {
-    border: 1px solid #000000;
-    text-align: center;
-    width: 50%;
+.punctuation-grid td, .punctuation-grid th 
+{
+    width: 33.333333%;
 }
 
-.vowel-grid td {
-    background-color: #383838;
+.vowel-grid 
+{
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+    width: 80%;
 }
 
-.vowel-grid th {
-    background-color: #181818;
-    color: #c45a5a;
+.vowel-grid td, .vowel-grid th
+{
+    width: 14.285714%;
 }
