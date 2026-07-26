@@ -5,13 +5,7 @@
     src: url("./kxrh.ttf") format("truetype");
 }
 
-@media (max-width: 1919px)
-{
-    body, header, html, nav
-    {
-        min-width: 1920px;
-    }
-}
+@media (max-width: 1919px) { html { min-width: 1920px;} }
 
 body 
 {
@@ -45,20 +39,13 @@ header p
     margin: 0;
 }
 
-header .kxrh 
-{
-    padding-top: 12px;
-}
+header .kxrh { font-size: 44px; }
 
-h1 
-{
-    font-size: 60px;
-}
+header, nav { z-index: 1; }
 
-h2 
-{
-    font-size: 40px;
-}
+h1 { font-size: 60px; }
+
+h2 { font-size: 40px; }
 
 nav 
 {
@@ -85,14 +72,14 @@ nav a
     user-select: none;
 }
 
-p 
-{
-    font-size: 18px;
-}
+p { font-size: 18px; }
 
-td 
+td { background-color: #383838; }
+
+td .kxrh
 {
-    background-color: #383838;
+    font-size: 40px;
+    line-height: 0.5;
 }
 
 td, th 
@@ -107,56 +94,51 @@ th
     color: #c45a5a;
 }
 
-.consonant-grid 
+.consonant { width: 60%; }
+
+.consonant td, .consonant th { width: 20%; }
+
+.definition
+{
+    font-size: 21px;
+    line-height: 1.25;
+}
+
+.definition .kxrh
+{
+    font-size: 36px;
+    line-height: 1.25;
+}
+
+.grid
 {
     border-collapse: collapse;
     margin-left: auto;
     margin-right: auto;
     table-layout: fixed;
-    width: 60%;
 }
 
-.consonant-grid td, .consonant-grid th 
-{
-    width: 20%;
-}
-
-.ipa
-{
-    font-family: 'Times New Roman';
-}
+.ipa, i { font-family: 'Doulos SIL'; }
 
 .kxrh 
 {
+    display: inline-block;
     font-family: "KXRh";
-    font-size: 44px;
+    font-size: 30px;
+    line-height: 1;
+    transform: translateY(6px);
+    user-select: none;
     white-space: pre;
 }
 
-.punctuation-grid 
-{
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
-    table-layout: fixed;
-    width: 36%;
-}
+.numeral { width: 60%; }
 
-.punctuation-grid td, .punctuation-grid th 
-{
-    width: 33.333333%;
-}
+.numeral td, .numeral th { width: 20%; }
 
-.vowel-grid 
-{
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
-    table-layout: fixed;
-    width: 80%;
-}
+.punctuation { width: 36%; }
 
-.vowel-grid td, .vowel-grid th
-{
-    width: 14.285714%;
-}
+.punctuation td, .punctuation th { width: 33.333333%; }
+
+.vowel { width: 80%; }
+
+.vowel td, .vowel th { width: 14.285714%; }
