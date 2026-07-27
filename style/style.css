@@ -101,13 +101,13 @@ th
 .definition
 {
     font-size: 21px;
-    line-height: 1.25;
+    line-height: 1.5;
 }
 
 .definition .kxrh
 {
     font-size: 36px;
-    line-height: 1.25;
+    line-height: 1.5;
 }
 
 .grid
@@ -134,6 +134,14 @@ th
 .numeral { width: 60%; }
 
 .numeral td, .numeral th { width: 20%; }
+
+.pair-legality { width: 90%; }
+
+.pair-legality col { width: 3.333333%; }
+
+.pair-legality td { font-size: 28px; }
+
+.pair-legality td, .pair-legality th { height: 50px; }
 
 .punctuation { width: 36%; }
 
