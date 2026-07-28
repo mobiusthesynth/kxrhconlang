@@ -94,9 +94,9 @@ th
     color: #c45a5a;
 }
 
-.consonant { width: 60%; }
+.consonant, .consonant-suffix, .numeral, .vowel { width: 60%; }
 
-.consonant td, .consonant th { width: 20%; }
+.consonant td, .consonant th, .consonant-suffix col, .function-words col, .numeral td, .numeral th { width: 20%; }
 
 .definition
 {
@@ -109,6 +109,8 @@ th
     font-size: 36px;
     line-height: 1.5;
 }
+
+.function-words, .vowel-suffix { width: 65%; }
 
 .grid
 {
@@ -131,11 +133,7 @@ th
     white-space: pre;
 }
 
-.numeral { width: 60%; }
-
-.numeral td, .numeral th { width: 20%; }
-
-.pair-legality { width: 90%; }
+.pair-legality, .simple-roots { width: 90%; }
 
 .pair-legality col { width: 3.333333%; }
 
@@ -147,6 +145,8 @@ th
 
 .punctuation td, .punctuation th { width: 33.333333%; }
 
-.vowel { width: 80%; }
-
 .vowel td, .vowel th { width: 14.285714%; }
+
+.vowel-suffix col:first-child { width: 50%; }
+
+.simple-roots col, .vowel-suffix col:not(:first-child) { width: 16.666667%; }
